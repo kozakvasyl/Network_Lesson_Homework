@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>NETWORK-homework</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+</head>
+<body>
+	<header class="header">
+		<h1>NETWORK-lesson homework</h1>
+	</header>
+
+	<nav>
+		<ul>
+			<li><a href="#one"">TASK1</a></li>
+			<li><a href="#two"">TASK2</a></li>
+			<li><a href="#three"">TASK3</a></li>
+			<li><a href="#fore"">TASK4</a></li>
+			<li><a href="#five"">TASK5</a></li>
+			<li><a href="#six"">TASK6</a></li>
+			<li><a href="#seven"">TASK7</a></li>
+			<li><a href="#aght"">TASK8</a></li>
+			<li><a href="#nine"">TASK9</a></li>
+			<li><a href="#ten"">TASK10</a></li>
+			<li><a href="#eleven"">TASK11</a></li>
+		</ul>
+	</nav>
+	
+	<main>
+		<div>
+			<h2 id="one">Task 1. Read.</h2>
+		<div/>
+
+		<div>
+			<h2 id="two"> Task2. Play with Chrome Developers Toolkit (DevTools), and "Network" tab.</h2>
+			<p>Trello</p>
+				<img src="TASK2/Trello.jpg">
+			<p>Duolingo</p>
+				<img src="TASK2/Duolingo.jpg">
+			<p>Facebook</p>
+				<img src="TASK2/Facebook.jpg">
+			<p>Hurtom</p>
+				<img src="TASK2/Hurtom.jpg">
+			<p>SoundCloud</p>
+				<img src="TASK2/SoundCloud.jpg">
+			<p>the list of headers</p>
+				<img src="TASK2/HEADERS meaning.jpg">
+			<p><a href="https://uk.wikipedia.org/wiki/%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA_%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D1%96%D0%B2_HTTP" target="_blank">More information</a></p>
+		</div>
+
+		<div>
+			<h2 id="three">Task3. What are differences between HTTP version 1.0 and 1.1?</h2>
+			<p>HTTP/1.0<br>
+				- для кожного запиту/відповіді потребує нового з'єднання.<br>
+				HTTP/1.1<br>
+				- може стабільно тримати з'єднання для декількох запитів;<br>
+				- потребує уточнення host:, бо може працювати з декількома доменами на сервері.
+			</p>
+			<p>How to pass user-data via GET? via POST? what is the diff?</p>
+			<p>GET<br>
+				- запрошує та повертає дані із сервера;<br>
+				- ІДЕМПОТИЧНИЙ - отримує однаковий результат при однакових запитах;<br>
+				- при запиті даних використовує URL, тому обмежений в кількості даних довжиною URL;<br>
+				- менш безпечний, через видимість даних в URL.<br>
+				POST<br>
+				- передає та повертає дані;<br>
+				- може отримувати різні відповіді, при предачі однакових даних. Не є ІДЕМПОТИЧНИМ;<br>
+				- при надсиланні даних, використовує html структуру, тому більш безпечний,
+				та може передавати більші об'єми даних.
+			</p>
+			<p>Few samples of websites (and cases) where POST method is used</p>
+			<p>SoundCloud</p>
+			<img src="TASK3/POST methodA.jpg">
+			<p>YouTube</p>
+			<img src="TASK3/POST methodB.jpg">
+		</div>
+
+		<div>
+			<h2 id="fore">Task4. Use the "telnet" program.</h2>
+			<img src="TASK4/telnet.jpg">
+			<img src="TASK4/telnet connect.jpg">
+		</div>
+
+		<div>
+			<h2 id="five">Task5. Use actions on "Network" tab.</h2>
+			<p>Використовував запис скріншотів. Дозволяє візуально відслідковувати завантаження контетнту.
+				Що дає можливість аналізувати його поетапно. З використанням фільтру, можн зручно шукати
+				необхідні файли, сортувати їх по типах.<p/>
+		</div>
+
+
+		<div>
+			<h2 id="six">Task 6. Using the hurl.it</h2>
+			<img src="TASK6/Rozetka.jpg">
+			<p><b>Cache-Control:</b> - кешування контенту в браузері;<br>
+				private - дані кешуються в браузері, але не в якихось проміжних кешах;<br>
+				no-cache - при повторному запиті на цю URL, запит буде перевірятися;<br>
+				no-store - забороняє браузеру зберігати версійність сайту.<br>
+				must-revalidate - кеш повинен перевіряти стан застарілих ресурсів перед його використанням, і їх не потрібно використовувати.<br>
+				<b>Connection:</b> - стан з'єднання;<br>
+				keep-alive - це значить, що можна використати одне TCP з'єднання для декількох HTTP запитів.<br>
+				<b>Content-Encoding:</b> - спосіб кодування контенту gzip.<br>
+				<b>Content-Type:</b> - форма і спосіб представлення сутності (тіла).<br>
+				<b>Date:</b> - дата генерації відповіді.<br>
+				<b>Edge-Control:</b> - додаткові мождивості кешування контенту.<br>
+				<b>Expires:</b> - дата імовірного терміну закінчення сущності. Тоді я не знаю в даному випадку(Thu, 01 Jan 1970 00:00:01 GMT) що це значить????<br>
+				<b>Keep-Alive:</b> - час з'єднання.<br>
+				<b>Server:</b> - сервер nginx.<br>
+				<b>Surrogate-Control:</b> - теж щось пов'язане із керуванням кешування.<br>
+				<b>Transfer-Encoding:</b> - надійний механізм пакетування даних chunked;<br>
+				<b>Vary:</b> - інформує проксі сервер, що необхідно зжати ресурс.<br>
+			</p>
+		</div>
+
+		<div>
+			<h2 id="seven">Task 7. Using the hurl.it</h2>
+			<img src="TASK7/RozetkaHEADrequest.jpg">
+			</div>
+
+		<div>
+			<h2 id="aght">Task 8. What is the different with GET request?</h2>
+			<p>Метод GET отримує всі дані запиту + контент сайту (сутність), HEAD - тільки дані запиту (шапку).</p>
+		</div>
+
+		<div>
+			<h2 id="nine">Task 9. Find and show few (at least 5) resources, where POST method is used</h2>
+			<img src="TASK9/moviegramPOST.jpg">
+			<img src="TASK9/RabotaPOST.jpg">
+			<img src="TASK9/RozetkaPOST.jpg">
+			<img src="TASK9/espresoPOST.jpg">
+			<img src="TASK9/YouTubePOST.jpg">
+		</div>
+
+		<div>
+			<h2 id="ten">Task 10. Using the Postman extension</h2>
+			<img src="TASK10/hromadske.jpg">
+			<img src="TASK10/moviestape.jpg">
+			<img src="TASK10/sborkaua.jpg">
+			<img src="TASK10/trello.jpg">
+			<img src="TASK10/photostudy.jpg">
+		</div>
+
+		<div>
+			<h2 id="eleven"> Task 11. Find any free hosting that provides FTP accessgoogle </h2>
+			<a href="https://myhomeworktask.000webhostapp.com/" target="_blank">my homework TASK11</a>
+		</div>
+	</main>
+
+ <footer class="bottom">
+	<h3>kozakvasyl</h3>
+ </footer>
+	
+</body>
+</html>
